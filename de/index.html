@@ -11,6 +11,23 @@
     <link rel="preload" href="../fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
     <script type="module" crossorigin src="../assets/main-CqvcAUKP.js"></script>
     <link rel="stylesheet" crossorigin href="../assets/main-XNggwgts.css">
+    <style id="voltie-compliance-update">
+      h1,h2,h3,h4,h5,h6 { -webkit-hyphens:none!important; hyphens:none!important; word-break:normal!important; overflow-wrap:normal!important; }
+      .compliance-badges { display:flex; flex-wrap:wrap; gap:.65rem; margin:1.25rem 0; font-size:.875rem; line-height:1.5; }
+      .compliance-badges span,.compliance-badges a { display:block; padding:.6rem .9rem; border:1px solid currentColor; border-radius:1rem; color:inherit; }
+      .austria-grid { position:relative; padding:clamp(3rem,6vw,6rem) clamp(1.25rem,6vw,6rem); background:#fff; color:#111; }
+      .austria-grid-inner { max-width:76rem; margin:auto; }
+      .austria-grid h2 { max-width:22ch; font-size:clamp(2rem,4vw,3.75rem); line-height:1.1; margin:.75rem 0 1.5rem; }
+      .austria-grid p,.austria-grid li { max-width:74ch; line-height:1.65; }
+      .austria-models { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.75rem; list-style:none; padding:0; margin:1.5rem 0; }
+      .austria-models li { border:1px solid #ccc; border-radius:1rem; padding:1rem; }
+      .austria-models strong { display:block; }
+      .installer-note { margin-top:2rem; padding:1.5rem; border-radius:1rem; background:#e0fff7; }
+      .installer-note h3 { margin:0 0 .75rem; font-size:1.4rem; }
+      .installer-note a { color:inherit; text-decoration:underline; }
+      .welcome-heading > * { min-width:0; }
+      @media(max-width:700px) { .austria-models { grid-template-columns:repeat(2,minmax(0,1fr)); } html[lang="de"] h2 { font-size:clamp(1.3rem,5.5vw,2.4rem); } }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -28,6 +45,7 @@
         <div class="hero-copy">
           <p class="eyebrow">Intelligentes E-Laden für Ihre Immobilie</p>
           <h1>Intelligentes E-Laden macht Ihre Immobilie für Mieter attraktiver.</h1>
+          <div class="compliance-badges" aria-label="Prüfung und Listung"><span>OVE R37: Typprüfung bei TÜV AUSTRIA bestanden</span><a href="https://www.wechselrichterliste.at/ladeeinrichtungen" target="_blank" rel="noopener noreferrer">Gelistet bei Österreichs Energie <span aria-hidden="true" style="display:inline;padding:0;border:0">↗</span></a></div>
           <p class="hero-deck">Geben Sie Mietern einen unkomplizierten Ladeplatz – mit Zugang, Zahlungsoptionen und Werkzeugen zur Verwaltung, die zu Ihrer Immobilie passen. Von der Planung bis zur Installation bringt Voltie das zusammen.</p>
           <div class="hero-actions"><a class="button button-ink" href="#book-a-call">Gespräch vereinbaren <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">So funktioniert es <span aria-hidden="true">↓</span></a></div>
         </div>
@@ -36,6 +54,17 @@
           <p class="product-note">Ein warmer Empfang. Bis ins letzte Detail.</p>
         </div>
         <div class="hero-swoop" aria-hidden="true"></div>
+      </section>
+
+      <section class="austria-grid scene-white" id="netzanschluss-oesterreich" data-flood="white" aria-labelledby="austria-title">
+        <div class="austria-grid-inner">
+          <p class="eyebrow">Netzanschluss in Österreich</p>
+          <h2 id="austria-title">OVE R37 geprüft. Für Österreich konfiguriert.</h2>
+          <p>Die Voltie Pro erfüllt die Anforderungen der OVE R37 und hat die Typprüfung bei TÜV AUSTRIA bestanden. Bei der Inbetriebnahme wählt die Elektrofachkraft in der App Österreich aus. Die Netzparameter sind durch einen Installateurcode geschützt.</p>
+          <p>Die Typprüfung umfasst alle vier Modelle:</p>
+          <ul class="austria-models"><li><strong>VP-22</strong>22 kW, 3-phasig</li><li><strong>VP-11</strong>11 kW, 3-phasig</li><li><strong>VP-7</strong>7,4 kW, 1-phasig</li><li><strong>VP-3.7</strong>3,7 kW, 1-phasig</li></ul>
+          <aside class="installer-note" aria-labelledby="installer-title"><h3 id="installer-title">Für Elektrofachkräfte und Installationsbetriebe</h3><p>Prüfen Sie vor der Anmeldung beim Netzbetreiber den aktuellen Voltie-Pro-Eintrag in der Liste von Österreichs Energie und beachten Sie die dort genannten Bedingungen. Wählen Sie bei der Inbetriebnahme in der App Österreich aus; der Installateurcode schützt die Netzparameter.</p><a href="https://www.wechselrichterliste.at/ladeeinrichtungen" target="_blank" rel="noopener noreferrer">Zur Liste der Ladeeinrichtungen bei Österreichs Energie ↗</a></aside>
+        </div>
       </section>
 
       <section class="welcome scene-coral" id="how-it-works" data-flood="coral">
@@ -103,7 +132,7 @@
 
       <section class="proof scene-forest" id="proof" data-flood="forest">
         <div class="proof-orb orb-one" aria-hidden="true"></div><div class="proof-orb orb-two" aria-hidden="true"></div>
-        <p class="eyebrow">Ein bewährtes Produkt, an echten Orten.</p><h2>Gebaut für Orte,<br />die Menschen teilen.</h2><p class="proof-copy">Das Voltie-Portfolio umfasst bereits Wohngebäude, Arbeitswelten und geteilte Parkflächen. Drei unserer Installationen:</p><ul class="project-proof"><li><strong>ParkWest 3</strong><span>217 Ladepunkte</span></li><li><strong>Kassák Terrace</strong><span>197 Ladepunkte</span></li><li><strong>Le Jardin</strong><span>58 Ladepunkte</span></li></ul><a class="proof-link" href="https://www.voltie.eu/en/references" target="_blank" rel="noopener noreferrer">Alle Voltie-Installationen ansehen <span aria-hidden="true">↗</span></a><p class="award-note">Auszeichnungen: iF Design Award, European Product Design Award, DNA Paris Design Awards, PropTech Smart Builder.</p>
+        <p class="eyebrow">Ein bewährtes Produkt, an echten Orten.</p><h2>Gebaut für Orte,<br />die Menschen teilen.</h2><p class="proof-copy">Das Voltie-Portfolio umfasst bereits Wohngebäude, Arbeitswelten und geteilte Parkflächen. Drei unserer Installationen:</p><ul class="project-proof"><li><strong>ParkWest 3</strong><span>217 Ladepunkte</span></li><li><strong>Kassák Terrace</strong><span>197 Ladepunkte</span></li><li><strong>Le Jardin</strong><span>58 Ladepunkte</span></li></ul><a class="proof-link" href="https://www.voltie.eu/en/references" target="_blank" rel="noopener noreferrer">Alle Voltie-Installationen ansehen <span aria-hidden="true">↗</span></a><p class="award-note">Auszeichnungen: iF Design Award, European Product Design Award, DNA Paris Design Awards, PropTech Pioneer Awards.</p>
       </section>
 
       <section class="faq scene-white" id="faq" data-flood="white"><div class="faq-head"><p class="eyebrow">Fragen, klar beantwortet</p><h2>Bevor Sie planen, fragen Sie.</h2></div><div class="faq-list"><details><summary>Kann Voltie an meinem Standort eingesetzt werden?</summary><p>Verfügbarkeit, Installationsumfang und örtliche Anforderungen unterscheiden sich. Teilen Sie uns Ihre Immobilie mit und fragen Sie, was an Ihrem Standort möglich ist.</p></details><details><summary>Können Sie bei der Installation helfen?</summary><p>Voltie unterstützt die Installationsplanung und bietet, wo verfügbar, Montage aus einer Hand an. Umfang der Elektroarbeiten und der Leistungen hängen von Projektort und -umfang ab.</p></details><details><summary>Wie erhalten Mieter Zugang zum Laden?</summary><p>Besprechen Sie RFID- und App-Zugang für das Laden Ihrer Mieter. Die passende Lösung hängt davon ab, wie der Zugang an der Immobilie funktionieren soll.</p></details><details><summary>Was ist mit Zahlung und Förderung?</summary><p>Fahrer können je nach Projektaufsetzung direkt zahlen. Fragen Sie nach Zahlungsoptionen, lokalen Förderprogrammen und Anforderungen; Förderfähigkeit oder Förderhöhe sind nicht garantiert.</p></details></div></section>
